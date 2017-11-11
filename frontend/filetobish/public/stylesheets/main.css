@@ -1,0 +1,14 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+#header {
+	display: inline-block;
+	height: 50%;
+	width: 100%;
+	background-color: lightblue;
+}
+#header h1 {
+	margin: 0;
+	text-align: center;
+}

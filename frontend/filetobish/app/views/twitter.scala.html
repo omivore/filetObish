@@ -1,0 +1,12 @@
+@(form:Form[TwitterUserData])
+
+@main("Sign into Tiwtter") {
+    <div id="form">
+        @helper.form(routes.HomeController.findUser) {
+            @helper.inputText(form("Username"))
+            @helper.inputText(form("Password"))
+
+            <input type="submit" value="Twitter">
+        }
+    </div>
+}
