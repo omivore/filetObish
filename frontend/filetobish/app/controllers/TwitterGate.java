@@ -25,10 +25,8 @@ public class TwitterGate {
             twitter.setOAuthConsumer("7660bNlMrjdvYjh2Beer1OBms",
                                      "4oWEouoyRLTvjX3PF4xtYSCidrB0dwe5Gg9K1e8b3rhVSqtE5y");
             requestToken = twitter.getOAuthRequestToken();
-            return requestToken.getAuthenticationURL();
-        } else {
-            return null;
         }
+        return requestToken.getAuthenticationURL();
     }
 
     public Long getAccess(String pin) throws TwitterException {
@@ -60,5 +58,12 @@ public class TwitterGate {
             e.printStackTrace();
         }
         return "Wheee";
+    }
+
+    public static String getPoisons(Long user) {
+        Twitter twitter = getUserTwitter(user);
+        /*TwitterInfo info = TwinterInfo(twitter);
+        new filetObish(info.getIdCommentsTree()).getRatingMap();*/
+        return null;
     }
 }
