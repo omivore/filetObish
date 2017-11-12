@@ -1,12 +1,8 @@
 package filetObish;
 
-public abstract class Comment {
+public interface Comment {
 	//there is content and id
-	public int id;
-	public String content;
-	public String toString() {
-		return content;
-	}
-	public abstract void report(int id);
+	public String toString();
+	public void report(int id);
 
 }

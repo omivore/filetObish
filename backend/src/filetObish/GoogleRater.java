@@ -23,6 +23,5 @@ public class GoogleRater implements CommentRater {
 			System.out.println(e.getStackTrace());
 			return 0;
 		}
-
 	}
 }

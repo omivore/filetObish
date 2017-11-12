@@ -4,12 +4,17 @@ import java.util.ArrayList;
 import java.util.TreeMap;
 
 public class filetObish {
-	public static TreeMap<Double,ArrayList<Comment>> getRatingMap(TreeMap<Long,Comment> comments){
-		TreeMap<Double,ArrayList<Comment>> negativityMap = new TreeMap<Double,ArrayList<Comment>>();
-		GoogleRater rater = new GoogleRater();
-		for(Long id:comments.keySet()) {
+
+	public TreeMap<Long, Comment> comments;
+	public TreeMap<Double, ArrayList<Comment>> negativityMap;
+
+	public filetObish(TreeMap<Long, Comment> comments) {
+		this.comments = comments;
+		negativityMap = new TreeMap<Double, ArrayList<Comment>>();
+		CommentRater rater = new GoogleRater();
+		for (Long id : comments.keySet()) {
 			double rate = rater.rateComment(comments.get(id));
-			if(!negativityMap.containsKey(rate)) {
+			if (!negativityMap.containsKey(rate)) {
 				ArrayList<Comment> commentList = new ArrayList<Comment>();
 				commentList.add(comments.get(id));
 				negativityMap.put(rate, commentList);
@@ -17,6 +22,5 @@ public class filetObish {
 				negativityMap.get(rate).add(comments.get(id));
 			}
 		}
-		return negativityMap;
 	}
 }
