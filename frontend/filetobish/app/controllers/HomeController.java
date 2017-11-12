@@ -25,7 +25,12 @@ public class HomeController extends Controller {
     }
 
     public Result findUser() {
-        return ok(views.html.twitter.render(form));
+        //try {
+            return ok(views.html.twitter.render(form));
+            //return redirect(TwitterGate.login());
+        /*} catch (TwitterException e) {
+            return internalServerError(e.getMessage());
+        }*/
     }
 
 }
