@@ -1,8 +1,8 @@
 package filetObish;
 
-public interface Comment {
+public abstract class Comment {
 	//there is content and id
-	public String toString();
-	public void report(int id);
-
+	public String content;
+	public long id;
+	public abstract void report(int id);
 }
