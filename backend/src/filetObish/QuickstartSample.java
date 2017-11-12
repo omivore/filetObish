@@ -11,7 +11,7 @@ public class QuickstartSample {
     try (LanguageServiceClient language = LanguageServiceClient.create()) {
 
       // The text to analyze
-      String text = "Hello, world!";
+      String text = "you are rude";
       Document doc = Document.newBuilder()
           .setContent(text).setType(Type.PLAIN_TEXT).build();
 
