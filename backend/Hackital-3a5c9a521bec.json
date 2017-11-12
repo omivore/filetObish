@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hackital-185719",
+  "private_key_id": "3a5c9a521bec378da223433e34092eb52005f674",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCk+WXn4JO5R7wx\nVTEh7sT78WZoV9M5Kll1pzTXvFQSXnoIpqE1DOlFectwt2ROCEkjpbe7YhqjCYO9\nDBK3B4NperfjXLEX7eDSB2phBPVV4A2NoO6PxwxkOhEaC8rnbBBOl/wkLgK9Hcii\nwpPaBo+HjMAvXWnfnlut5ACKepAfToZhGZCX/o2Cstgzglx/wE2eLvzQ/gpShF2I\nT0LVbhMGWNkxHvJcMfDK9cc83kvKbS+w521YvMJkZTMOKwdB43OH9fUgaTf0G9YX\nur5f8jye7u9Rpp7FPOVdbbtgdDNumYFdUjXMaQVFVIhmrLyXFKJTB7I+9Zj1BJif\nW6SPG+mvAgMBAAECggEAE7Sh6lrGGnAJ99SRZq24GXtXZv2dQoCfU0aH29W9hGeE\n6R/03+WCaaTnhY0KWKh0YA3X4/SPHPayezQuz25WJpUc06DLRddJWZ0UJQbsF81d\noRNeMONZmhE2NhJph/oS+pL8mwUPQ7AD5VkbmFkx722DDpqjCQMdN/36Mzr6Qxre\nCLhaG0SfzCVERMoUhi2V5HIFA2Bz2cpkgsdU6m3CiKpLnBC4SqfOouz95j3YVJMT\ngC+SAM66esp7D/CPIzIurfQJFvMKPjj18+Y7/6X/vvJB+qPdBYsvr4BAJBAtc/p9\ndzKNzbUKc6c7AIp1jQRfh29ioJpc3hpLWZXgU3BgiQKBgQDc7BPZZ71bqYPCds+I\nx9qxraqhvscYVB6NSrEpIych84Mgu7hRSk/LkOVBmzgfC2T67TPRnf1kxXjeTl5n\np7rnyrM+VixY53IHXPvlGAUJnyI8oJ11Lx4iY8D2zazD8xeExcDDcnMJXqfbF35Q\nhieBz2D7uwtd+b3UPCDi8wt3iQKBgQC/Ky20lbCl21ng+xa7yyTnAcU6UU9DU95R\nRJgC6R/NtrvrlR3uUSovTAfDcp7Y2zKFRO2nhc+i/MkuRZ/iTojTayd16hHAluf4\nF3peJjdEqQo65R//8sf3pFF1Q+KLlcfTFMNmTCeWnutg+RUj4bpvzru7rV2YN5+a\n1QxgUg1RdwKBgQDW2r3/LPYrBDSBVr1FoGCfdm/BOGI21fCUpzSe9nIjgclgd1Ct\ntmDecH+WC5hMEO/XXgOMdGOwsqB3S65ijuymaythj7s3h3gNky/jwTV9AwfwAKDC\nC935whwzqxm/xFZ2KUDslA0u6qDC4hlVxPL9OytuBp3qem1U0FmHfqoDSQKBgQC8\nwZ+hfWQsgAeg84ug5ZaMWd0qFfrTmc4cJESMKy9x6YpntJcXJyEmDkZkH5rkuJqL\nqGGYVbGNV1g1zh1uUOkdB+KwtOvOY7Kr7lKu/8D2lIo7WN1d1ZTI2oBr7xmThdMG\ngqvlKDC2sjfrSkYrZci2eUQ4rZeKovF+6foMaTgpRQKBgQC0P1PzlzLztpAuzF0k\nPsnRfSRQ6wuf+5bCR87zY/eqlNLwIftv4Hq0iyFWylco1guvNd8IlGvL9CpdPi7O\nzC9nm/WWq/yJeDAvmV18SkOzJ84O5Q4LkLmLvKLazcJh85yFKYdKt3Aye6EDjTrL\nKbrzxwZUR7DqEUkTzVRd4lX5mw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "hackital@hackital-185719.iam.gserviceaccount.com",
+  "client_id": "111680729650225407151",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hackital%40hackital-185719.iam.gserviceaccount.com"
+}
