@@ -31,7 +31,7 @@ public class TwitterInfo implements InfoGatherer{
 		}
 
 		for (Status s : mentions) {
-			Comment com = new TwitterComment(s.getId(), s.getText());
+			Comment com = new TwitterComment(s.getId(), s.getText(),twitter);
 			map.put(s.getId(), com);
 		}
 		
