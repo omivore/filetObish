@@ -1,12 +1,16 @@
-@(form:Form[TwitterUserData])
+@(form: Form[TwitterUserData])
 
 @main("Sign into Tiwtter") {
+	@helper.form(routes.HomeController.twitterGate, 'name -> "twitterGateway", 'target -> "_blank") {
+		<input type="submit" value="" style="display: none">
+	}
     <div id="form">
-        @helper.form(routes.HomeController.findUser) {
-            @helper.inputText(form("Username"))
-            @helper.inputText(form("Password"))
+        @helper.form(routes.HomeController.twitterAccess) {
+        	@helper.CSRF.formField
+            @helper.inputText(form("pin"), '_label -> "Enter PIN")
 
             <input type="submit" value="Twitter">
         }
     </div>
+    <script src="@routes.Assets.versioned("javascripts/twitter.js")" type="text/javascript"></script>
 }
