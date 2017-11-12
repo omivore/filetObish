@@ -19,7 +19,8 @@
 
   <div id="form">
         @helper.form(routes.HomeController.findUser) {
-             <input type="submit" value="Twitter">
+            @helper.CSRF.formField
+			<input type="submit" value="Twitter">
         }
   </div>
 
