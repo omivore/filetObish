@@ -1,0 +1,9 @@
+@(comments: Seq[Comment])
+
+@main("Toxicity Report") {
+    <ul class="container">
+    	@for(c <- comments) {
+            <li><input type="checkbox" value="@c.content" name="@c.id"/></li>
+        }
+    </ul>
+}

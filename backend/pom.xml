@@ -2,6 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>filetObish</groupId>
   <artifactId>filetObish</artifactId>
+  <packaging>jar</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -13,6 +14,19 @@
           <source/>
           <target/>
         </configuration>
+      </plugin>
+      <plugin>
+      	<groupId>org.apache.maven.plugins</groupId>
+      	<artifactId>maven-shade-plugin</artifactId>
+      	<version>3.1.0</version>
+      	<executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>

@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import filetObish.TwitterInfo;
+import filetObish.filetObish;
 import play.libs.F.Tuple;
 import twitter4j.Status;
 import twitter4j.Twitter;
@@ -41,7 +43,8 @@ public class TwitterGate {
         cb.setOAuthConsumerKey("7660bNlMrjdvYjh2Beer1OBms")
           .setOAuthConsumerSecret("4oWEouoyRLTvjX3PF4xtYSCidrB0dwe5Gg9K1e8b3rhVSqtE5y")
           .setOAuthAccessToken(userTokens.get(user)._1)
-          .setOAuthAccessTokenSecret(userTokens.get(user)._2);
+          .setOAuthAccessTokenSecret(userTokens.get(user)._2)
+          .setDebugEnabled(true);
         return new TwitterFactory(cb.build()).getInstance();
     }
 
@@ -60,10 +63,11 @@ public class TwitterGate {
         return "Wheee";
     }
 
-    public static String getPoisons(Long user) {
+    public static filetObish getPoisons(Long user) {
         Twitter twitter = getUserTwitter(user);
-        /*TwitterInfo info = TwinterInfo(twitter);
-        new filetObish(info.getIdCommentsTree()).getRatingMap();*/
-        return null;
+        System.out.println(twitter.toString());
+        TwitterInfo info = new TwitterInfo(twitter);
+        System.out.println(info.getIdCommentsTree().toString());
+        return new filetObish(info.getIdCommentsTree());
     }
 }

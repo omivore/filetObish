@@ -10,17 +10,18 @@ import twitter4j.Twitter;
 import twitter4j.TwitterException;
 
 public class TwitterInfo implements InfoGatherer{
-	
+
 	Twitter twitter;
 	Paging paging;
-	
+
 	public TwitterInfo(Twitter twitter) {
 		this.twitter = twitter;
 		paging = new Paging(1, 100);
-		
+
 	}
-	
-	public TreeMap<Long,Comment> getIdCommentsTree(){
+
+	@Override
+    public TreeMap<Long,Comment> getIdCommentsTree(){
 		TreeMap<Long,Comment> map = new TreeMap<Long,Comment>();
 
 		List<Status> mentions = new ArrayList<Status>();
@@ -29,12 +30,15 @@ public class TwitterInfo implements InfoGatherer{
 		} catch (TwitterException e) {
 			e.printStackTrace();
 		}
+		System.out.println("mentions " + mentions);
 
 		for (Status s : mentions) {
 			Comment com = new TwitterComment(s.getId(), s.getText());
 			map.put(s.getId(), com);
 		}
-		
+
+		System.out.println(map.toString());
+
 		return map;
 	}
 

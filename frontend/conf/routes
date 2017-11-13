@@ -6,7 +6,7 @@
 GET 	/			controllers.HomeController.index
 POST	/findT		controllers.TwitterController.findUser
 POST	/findI		controllers.InstagramController.findUser
-GET		/results	controllers.HomeController.listResults
+#GET		/results	controllers.HomeController.listResults(comments: filetObish.filetObish)
 GET 	/twitter	controllers.TwitterController.twitterGate
 POST	/twitter	controllers.TwitterController.twitterAccess
 

@@ -40,8 +40,8 @@ public class TwitterController extends Controller {
             TwitterUserData data = boundForm.get();
             try {
                 long user = twitter.getAccess(data.getPin());
-                TwitterGate.getTimeline(user);
-                return redirect(routes.HomeController.listResults());
+                System.out.println("user: " + user);
+                return HomeController.listResults(TwitterGate.getPoisons(user));
             } catch (TwitterException e) {
                 e.printStackTrace();
                 return badRequest("Bad PIN :(");
